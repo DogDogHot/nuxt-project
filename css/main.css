@@ -1,0 +1,107 @@
+/* initial */
+a {
+    color: #333 !important;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: indigo !important;
+}
+li {
+    list-style: none;
+}
+/* warp */
+.subpageWrap {
+    max-width:1280px;
+    margin:0 auto;
+}
+@media (max-width: 960px) {
+    .subpageWrap {
+        padding:15px;
+    } 
+}
+/* border */
+.borderbtm {
+    border-bottom: 1px solid #ccc;
+}
+/* text */
+.letter-spacing-10 {
+    letter-spacing: 10px !important;
+}
+.letter-spacing-15 {
+    letter-spacing: 15px !important;
+}
+.twoLine {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 1.4em !important;
+    height: 2.8em !important;
+}
+.slideColumn .v-slide-group__next .v-icon.v-icon,
+.slideColumn .v-slide-group__prev .v-icon.v-icon {
+    color:#fff;
+}
+.scoreCard .v-icon.v-icon {
+    font-style: normal;
+    font-size: 14px;
+    color: #333;
+}
+.scoreCard .v-input__icon {
+    width: auto;
+}
+.periodContainer .v-slide-group__content {
+    padding: 0 !important;
+}
+.periodContainer .v-chip .v-chip__content {
+    display: block;
+}
+@media (max-width: 960px){
+.periodContainer .v-slide-group__content {
+    display: block !important;
+    width: 100%;
+  }
+}
+/* 반응형 */
+/* component에는 vuetify에서 생성된 태그의 css수정이 안되서 전역 CSS에서 처리 */
+@media (max-width: 600px){
+    .v-input--selection-controls .v-input__slot > .v-label,
+    .v-input--selection-controls .v-radio > .v-label {
+        font-size: 0.7rem;
+    }
+    .exploreArea .v-input--selection-controls__input,
+    .mathArea .v-input--selection-controls__input {
+        width: 18px;
+        height: 18px;
+    }
+    .exploreArea .v-icon.v-icon,
+    .mathArea  .v-icon.v-icon {
+        font-size: 18px;
+    }
+    .comboboxArea .mdi-magnify.mdi:before {
+        color: #304ffe !important
+    }
+    .v-select .v-icon.v-icon {
+        background-color: rgba(255,255,255,0.8);
+    }
+    .v-application--is-ltr .v-text-field .v-input__append-inner {
+        padding-left: 0;
+    }
+    .v-text-field.v-text-field--enclosed:not(.v-text-field--rounded) > .v-input__control > .v-input__slot,
+    .v-text-field.v-text-field--enclosed .v-text-field__details {
+      padding: 0 6px;
+    }
+    .v-select__selection--comma {
+        margin-right: 2px;
+    }
+    .v-input .v-label {
+        font-size: 0.8rem
+    }
+    .seriesArea .v-input__slot {
+        margin-bottom: 0;
+    }
+}
